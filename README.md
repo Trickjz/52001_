@@ -1,15 +1,28 @@
-# README
+# Analizador de Expresiones Regulares con ANTLR4 + JavaScript
 
-Este es un archivo README para el repositorio. Aquí puedes describir el propósito del proyecto, cómo instalarlo y cómo usarlo.
+Este proyecto implementa un analizador sintáctico para **expresiones regulares simples**, desarrollado con **ANTLR4** y ejecutado con **Node.js**.
 
+## 📚 Descripción
 
-## Instalación
+La gramática utilizada reconoce expresiones como:
+- `a`
+- `a*`
+- `a|b`
+- `(a|b)*abb`
 
-Clona este repositorio: git clone https://github.com/mbrachetta/50268.git
+Y detecta errores como:
+- `a**`
+- `(|a)`
 
+## 📦 Requisitos
 
-## Instrucciones de Uso
-```sh
-Incorporar aquí las instrucciones detalladas de uso, gráficos explicativos y cualquier otra
-información que considere importante para favorecer el testeo y evaluación de su proyecto de
-analizador.
+- Node.js (v16 o superior)
+- Java JDK (8 o superior)
+- ANTLR4 (versión 4.13.2)
+
+## 🛠️ Configuración y ejecución
+
+1. Generar el parser con ANTLR4:
+
+```bash
+java -jar antlr-4.13.2-complete.jar -Dlanguage=JavaScript -o generated RegExp.g4
