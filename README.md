@@ -26,3 +26,9 @@ Y detecta errores como:
 
 ```bash
 java -jar antlr-4.13.2-complete.jar -Dlanguage=JavaScript -o generated RegExp.g4
+
+## Autor
+
+Jazmín Nirvana Gudiño Estrada — Legajo: 52001  
+Materia: Sintaxis — Año 2025
+
