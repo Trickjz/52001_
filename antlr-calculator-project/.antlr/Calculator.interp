@@ -24,7 +24,7 @@ INT
 LPAREN
 RPAREN
 NEWLINE
-WS
+W SER
 
 rule names:
 prog
