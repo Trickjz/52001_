@@ -2,7 +2,7 @@
 
 Este proyecto implementa un analizador sintáctico para **expresiones regulares simples**, desarrollado con **ANTLR4** y ejecutado con **Node.js**.
 
-## 📚 Descripción
+##  Descripción
 
 La gramática utilizada reconoce expresiones como:
 - `a`
@@ -14,13 +14,13 @@ Y detecta errores como:
 - `a**`
 - `(|a)`
 
-## 📦 Requisitos
+##  Requisitos
 
 - Node.js (v16 o superior)
 - Java JDK (8 o superior)
 - ANTLR4 (versión 4.13.2)
 
-## 🛠️ Configuración y ejecución
+##  Configuración y ejecución
 
 1. Generar el parser con ANTLR4:
 
