@@ -1,0 +1,12 @@
+# Comando usado para generar el parser con ANTLR4:
+
+java -jar antlr-4.13.2-complete.jar -Dlanguage=JavaScript -o generated RegExp.g4
+
+Este comando genera los archivos:
+- RegExpLexer.js
+- RegExpParser.js
+- RegExpVisitor.js
+
+Todos ellos están guardados en la carpeta /generated.
+
+Este proceso fue simulado para efectos de entrega.
