@@ -1,0 +1,31 @@
+# Simulación de ejecución del analizador con input/ok1.txt
+
+Entrada: a|(b*c)
+
+>> Entrada: a|(b*c)
+>> Árbol (formato JSON):
+{
+  "tipo": "Union",
+  "izquierda": {
+    "tipo": "Char",
+    "valor": "a"
+  },
+  "derecha": {
+    "tipo": "Kleene",
+    "valor": {
+      "tipo": "Group",
+      "contenido": {
+        "tipo": "Concat",
+        "izquierda": {
+          "tipo": "Char",
+          "valor": "b"
+        },
+        "derecha": {
+          "tipo": "Char",
+          "valor": "c"
+        }
+      }
+    }
+  }
+}
+>> Resultado: expresión válida.
