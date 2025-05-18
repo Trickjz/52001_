@@ -1,0 +1,21 @@
+Tabla de tokens léxicos definidos por el lexer
+
+LEXEMA        | TOKEN
+--------------|--------------------------
+nombre        | 'nombre'
+tipo          | 'tipo'
+tamaño        | 'tamaño'
+creado        | 'creado'
+modificado    | 'modificado'
+autor         | 'autor'
+descripcion   | 'descripcion'
+etiquetas     | 'etiquetas'
+:             | ':'
+;             | ';'
+[             | '['
+]             | ']'
+,             | ','
+texto         | TEXTO
+número        | NUMERO
+fecha         | FECHA
+espacio       | WS (ignorado)
