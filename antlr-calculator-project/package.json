@@ -1,15 +1,14 @@
 {
-  "name": "analizador-expresiones-regulares",
+  "name": "metadata-analyzer",
   "version": "1.0.0",
-  "description": "Analizador de expresiones regulares usando ANTLR4 y Node.js",
+  "description": "Analizador léxico y sintáctico de metadatos con ANTLR4 y JavaScript",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js input/ok1.txt",
-    "test": "node test.js"
+    "start": "node index.js input/ok1.txt"
   },
   "author": "Jazmín Nirvana Gudiño Estrada",
   "license": "MIT",
   "dependencies": {
-    "antlr4": "^4.13.2"
+    "antlr4": "^4.13.0"
   }
-} 
+}
