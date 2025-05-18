@@ -1,0 +1,9 @@
+
+
+# Archivos generados por ANTLR al compilar Metadata.g4:
+
+- MetadataLexer.js
+- MetadataParser.js
+- MetadataVisitor.js
+
+Estos archivos se encuentran en la carpeta /generated y son fundamentales para procesar el código fuente del archivo input.txt.
