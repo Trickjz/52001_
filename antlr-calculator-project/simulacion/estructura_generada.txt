@@ -1,10 +1,10 @@
-# Archivos generados automáticamente por ANTLR
+# Archivos generados automáticamente por ANTLR:
 
-Al ejecutar el comando de ANTLR con la gramática RegExp.g4,
-se generaron los siguientes archivos en la carpeta /generated:
+- MetadataLexer.js
+- MetadataParser.js
+- MetadataVisitor.js
+- Metadata.tokens
+- MetadataLexer.tokens
 
-- RegExpLexer.js
-- RegExpParser.js
-- RegExpVisitor.js
+Todos los archivos están ubicados en la carpeta /generated.
 
-Cada uno fue incluido manualmente para simular el resultado real del análisis.
