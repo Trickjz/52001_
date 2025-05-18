@@ -1,0 +1,6 @@
+ANTLR ejecutado correctamente con la gramática RegExp.g4
+
+Archivos generados:
+- RegExpLexer.js
+- RegExpParser.js
+- RegExpVisitor.js
