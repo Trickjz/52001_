@@ -1,17 +1,15 @@
 {
-  "name": "antlr-calculator-project",
-  "type": "module",
+  "name": "analizador-expresiones-regulares",
   "version": "1.0.0",
-  "description": "",
+  "description": "Analizador de expresiones regulares usando ANTLR4 y Node.js",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node index.js input/ok1.txt",
+    "test": "node test.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Jazmín Nirvana Gudiño Estrada",
+  "license": "MIT",
   "dependencies": {
     "antlr4": "^4.13.2"
   }
-}
+} 
