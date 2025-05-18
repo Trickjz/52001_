@@ -1,11 +1,12 @@
-[
-version": "0.2.0",
+{
+  "version": "0.2.0",
   "configurations": [
     {
       "type": "node",
       "request": "launch",
-      "name": "Run ANTLR visitor",
+      "name": "Run Metadata Analyzer",
       "program": "${workspaceFolder}/index.js",
-      "args": ["input/ok1.txt"]
+      "args": ["${workspaceFolder}/input/ok1.txt"]
     }
   ]
+}
