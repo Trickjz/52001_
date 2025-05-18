@@ -1,2 +1,0 @@
-ID  : [a-z] ;                // Letras minúsculas como símbolos
-WS  : [ \t\r\n]+ -> skip ;   // Espacios en blanco ignorados
