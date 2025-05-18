@@ -1,0 +1,8 @@
+El archivo RegExpLexer.js fue generado por ANTLR y permite convertir la entrada en una serie de tokens para ser analizados por el parser.
+
+Ejemplo de tokens reconocidos:
+- ID → caracteres entre 'a' y 'z'
+- '|' → unión
+- '*' → operador de repetición
+- '(' y ')' → agrupación
+- WS → espacios, saltos de línea (ignorados)
