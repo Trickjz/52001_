@@ -1,27 +1,26 @@
 const antlr4 = require('antlr4');
-const RegExpLexer = require('./generated/RegExpLexer').RegExpLexer;
-const RegExpParser = require('./generated/RegExpParser').RegExpParser;
-const CustomRegExpVisitor = require('./CustomRegExpVisitor');
 const fs = require('fs');
+const MetadataLexer = require('./generated/MetadataLexer').MetadataLexer;
+const MetadataParser = require('./generated/MetadataParser').MetadataParser;
+const CustomMetadataVisitor = require('./CustomMetadataVisitor');
 
-// Recibe el archivo como argumento
-const input = fs.readFileSync(process.argv[2]).toString();
-console.log(">> Entrada:", input.trim());
-
+const input = fs.readFileSync(process.argv[2], 'utf8');
 const chars = new antlr4.InputStream(input);
-const lexer = new RegExpLexer(chars);
+const lexer = new MetadataLexer(chars);
 const tokens = new antlr4.CommonTokenStream(lexer);
-const parser = new RegExpParser(tokens);
+const parser = new MetadataParser(tokens);
+
 parser.buildParseTrees = true;
+const tree = parser.metadata();
 
-try {
-    const tree = parser.prog();
-    const visitor = new CustomRegExpVisitor();
-    const result = visitor.visit(tree);
+const visitor = new CustomMetadataVisitor();
+antlr4.tree.ParseTreeWalker.DEFAULT.walk(visitor, tree);
 
-    console.log(">> Árbol (formato JSON):");
-    console.log(JSON.stringify(result, null, 2));
-    console.log(">> Resultado: expresión válida.");
-} catch (error) {
-    console.error(">> Error de análisis:", error.message);
-}
+// Mostrar árbol sintáctico
+console.log('Árbol interpretado:');
+console.log(visitor.getMetadata());
+
+// Mostrar traducción a JavaScript
+console.log('\nTraducción a JavaScript:');
+console.log(visitor.toJavaScript());
+
