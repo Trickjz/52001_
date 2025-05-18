@@ -1,5 +1,9 @@
-antlr4.generation": {
-    "mode": "external",
-    "language": "JavaScript",
-    "outputDir": "./generated"
+{
+  "antlr4.generationMode": "external",
+  "antlr4.antlr4Jar": "${workspaceFolder}/antlr-4.13.2-complete.jar",
+  "antlr4.generateFromGrammar": true,
+  "antlr4.outputDir": "generated",
+  "files.associations": {
+    "*.g4": "antlr"
+  }
 }
