@@ -1,0 +1,13 @@
+TOKEN       | SIGNIFICADO                  | EJEMPLO
+------------|------------------------------|---------
+ID          | Identificador (letra a-z)    | a, b, c, z
+'('         | Paréntesis izquierdo         | (
+')'         | Paréntesis derecho           | )
+'*'         | Operador de repetición       | *
+'|'         | Operador de unión            | |
+WS          | Espacio en blanco (ignorado) | " ", \t, \n
+
+Definidos en RegExp.g4:
+
+ID  : [a-z] ;
+WS  : [ \t\r\n]+ -> skip ;
