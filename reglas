@@ -1,0 +1,52 @@
+Gramática: Metadata.g4
+
+Reglas Léxicas (Tokens)
+
+Palabras clave:
+nombre, tipo, tamaño, creado, modificado, autor, descripcion, etiquetas
+
+Símbolos:
+
+: → Separador entre campo y valor
+; → Final de declaración de campo
+[ y ] → Delimitadores de listas
+, → Separador de elementos en listas
+
+
+Tokens definidos:
+TEXTO → Secuencia de letras, dígitos, espacios y símbolos como _, -, .
+NUMERO → Secuencia de dígitos (0-9)
+FECHA → Formato yyyy-mm-dd o yyyy-mm-dd hh:mm[:ss]
+WS → Espacios, tabs, saltos de línea (ignorados)
+
+
+
+
+---
+
+Reglas Sintácticas
+
+metadata → campo*
+
+Una secuencia de cero o más campos.
+campo → nombreCampo ':' valorCampo ';'
+Un campo compuesto por un nombre, un valor y finalizado por un punto y coma.
+nombreCampo → 'nombre' | 'tipo' | 'tamaño' | 'creado' | 'modificado' | 'autor' | 'descripcion' | 'etiquetas'
+Los nombres válidos para los campos.
+valorCampo → texto | numero | fecha | listaTextos
+Los posibles valores que puede tomar un campo.
+texto → TEXTO
+Un valor textual.
+numero → NUMERO
+Un valor numérico.
+fecha → FECHA
+Una fecha en formato válido.
+listaTextos → '[' texto (',' texto)* ']'
+Una lista de textos separados por comas y delimitados por corchetes.
+
+---
+
+Notas Adicionales
+Los campos deben estar separados por punto y coma (;).
+Las listas de textos deben estar delimitadas por corchetes ([ ]) y sus elementos separados por comas.
+Los espacios en blanco son ignorados por el analizador léxico
