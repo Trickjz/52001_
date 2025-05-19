@@ -1,5 +1,8 @@
-((a|b)*abb) 
-
+nombre: archivo.txt;
+tipo: txt;
+tamaño: 5120;
+creado: 2024-10-10 08:30;
+descripcion: Texto de ejemplo; 
 
 
 
