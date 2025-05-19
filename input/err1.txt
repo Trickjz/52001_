@@ -1,4 +1,6 @@
-a** 
+nombre: documento.pdf
+tipo: pdf;
+tamaño: 102400; 
 
 
 
