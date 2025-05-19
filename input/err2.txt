@@ -1,4 +1,6 @@
-(|a) 
+nombreArchivo: miArchivo.txt;
+tipo: txt;
+tamaño: 2048; 
 
 
 
