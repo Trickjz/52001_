@@ -1,0 +1,14 @@
+LEXEMA             | TOKEN
+-------------------|---------------------
+nombre             | 'nombre'
+documento.pdf      | TEXTO
+:                  | ':'
+pdf                | TEXTO
+;                  | ';'
+tamaño             | 'tamaño'
+102400             | NUMERO
+;                  | ';'
+creado             | 'creado'
+2025-05-01 10:00   | FECHA
+;                  | ';'
+...
