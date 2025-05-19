@@ -1,0 +1,5 @@
+--- Entrada: input/err1.txt ---
+
+Error de sintaxis en línea 3: se esperaba ';' al final del campo.
+
+Entrada inválida. No se pudo generar el árbol sintáctico ni traducir a JavaScript.
