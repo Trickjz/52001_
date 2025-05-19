@@ -1,0 +1,10 @@
+(metadata
+  (campo nombre : documento.pdf ;)
+  (campo tipo : pdf ;)
+  (campo tamaño : 102400 ;)
+  (campo creado : 2025-05-01 10:00 ;)
+  (campo modificado : 2025-05-01 10:30 ;)
+  (campo autor : IA Modelo ;)
+  (campo descripcion : Documento de prueba para la gramática de metadatos. ;)
+  (campo etiquetas : [ documento , prueba , gramática ] ;)
+)
