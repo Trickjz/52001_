@@ -1,0 +1,17 @@
+`txt
+Construya un analizador léxico y sintáctico que reconozca expresiones de metadatos. Las expresiones están compuestas por campos como nombre, tipo, tamaño, creado, modificado, autor, descripción y etiquetas.
+
+Cada campo tiene el siguiente formato:
+nombreCampo : valorCampo ;
+
+El valor puede ser texto, número, fecha o una lista de textos. El conjunto completo se interpreta como una descripción de un archivo.
+
+Ejemplo:
+nombre: archivo.pdf;
+tipo: pdf;
+tamaño: 102400;
+creado: 2025-05-01 10:00;
+modificado: 2025-05-01 10:30;
+autor: IA Modelo;
+descripcion: Documento de prueba;
+etiquetas: [documento, prueba, ejemplo];
