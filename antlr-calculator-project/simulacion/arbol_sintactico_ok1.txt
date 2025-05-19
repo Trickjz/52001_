@@ -1,0 +1,8 @@
+(metadata
+  (campo nombre : documento.pdf ;)
+  (campo tipo : pdf ;)
+  (campo tamaño : 102400 ;)
+  ...
+)
+
+> Esto es lo que muestra parser.buildParseTrees = true.
