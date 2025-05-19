@@ -1,31 +1,25 @@
-# Simulación de ejecución del analizador con input/ok1.txt
+--- Entrada: input/ok1.txt ---
 
-Entrada: a|(b*c)
-
->> Entrada: a|(b*c)
->> Árbol (formato JSON):
+Árbol interpretado:
 {
-  "tipo": "Union",
-  "izquierda": {
-    "tipo": "Char",
-    "valor": "a"
-  },
-  "derecha": {
-    "tipo": "Kleene",
-    "valor": {
-      "tipo": "Group",
-      "contenido": {
-        "tipo": "Concat",
-        "izquierda": {
-          "tipo": "Char",
-          "valor": "b"
-        },
-        "derecha": {
-          "tipo": "Char",
-          "valor": "c"
-        }
-      }
-    }
-  }
+  nombre: documento.pdf,
+  tipo: pdf,
+  tamaño: 102400,
+  creado: 2025-05-01 10:00,
+  modificado: 2025-05-01 10:30,
+  autor: IA Modelo,
+  descripcion: Documento de prueba para la gramática de metadatos.,
+  etiquetas: [documento, prueba, gramática]
 }
->> Resultado: expresión válida.
+
+Traducción a JavaScript:
+const archivoMetadata = `
+nombre: documento.pdf;
+tipo: pdf;
+tamaño: 102400;
+creado: 2025-05-01 10:00;
+modificado: 2025-05-01 10:30;
+autor: IA Modelo;
+descripcion: Documento de prueba para la gramática de metadatos.;
+etiquetas: [documento, prueba, gramática];
+`;
